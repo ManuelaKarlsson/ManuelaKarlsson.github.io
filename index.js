@@ -48,7 +48,7 @@ const programmingProjects = Object.freeze([
         "longDescriptionSwedish": "Ett transportbolag efterfrågade en applikation där transportledare kunde planera \
             körningar och busschaufförer se sina körningar i en kalender. Applikationen skulle även hålla koll på fordon \
             och felanmälningar på dessa och ha en personalsida med kontaktinformation, utbildningar, körkort etc. Jag och \
-            fem klasskamrater gjorde en webbapplikation med Svelte, Node och MongoDB. Tre av oss (inkusive mig) fortsatte \
+            fem klasskamrater gjorde en webbapplikation med Svelte, Node och MongoDB. Tre av oss (inklusive mig) fortsatte \
             med projeketet över sommaren.",
         "longDescriptionEnglish": "A transport company requested an application where controllers could plan jobs and bus \
             drivers see their jobs in a calendar. The application would also keep track of vehicles and fault reports on \
