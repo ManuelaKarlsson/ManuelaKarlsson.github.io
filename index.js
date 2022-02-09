@@ -438,9 +438,9 @@ async function createModalProgrammingContent(project){
 
 async function setModalProgramming(project, index) {
     oldFocus = document.activeElement;
+    currentModalMode = ModalMode.PROGRAMMING;
     modalContentWrapper.appendChild(await createModalProgrammingContent(project));
     projectIndex = index;
-    currentModalMode = ModalMode.PROGRAMMING;
     modal.style.display = "block";
 }
 
@@ -453,9 +453,9 @@ async function createModalArtContent(project){
 
 async function setModalArt(project, index) {
     oldFocus = document.activeElement;
+    currentModalMode = ModalMode.ART;
     modalContentWrapper.appendChild(await createModalArtContent(project));
     projectIndex = index;
-    currentModalMode = ModalMode.ART;
     modal.style.display = "block";
 }
 
