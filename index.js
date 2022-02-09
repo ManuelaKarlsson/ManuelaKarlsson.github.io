@@ -149,7 +149,7 @@ const artProjects = Object.freeze([
     {
         "headerSwedish": "Huvudvärk",
         "headerEnglish": "Headache",
-        "image": "headache.png"
+        "image": "headache.jpg"
     },
     {
         "headerSwedish": "Svarta ögon",
@@ -164,7 +164,7 @@ const artProjects = Object.freeze([
     {
         "headerSwedish": "Herr Grön",
         "headerEnglish": "Mister Green",
-        "image": "mister_green.png"
+        "image": "mister_green.jpg"
     },
     {
         "headerSwedish": "Blått ljus",
@@ -184,7 +184,7 @@ const artProjects = Object.freeze([
     {
         "headerSwedish": "Konstnär",
         "headerEnglish": "Artist",
-        "image": "artist.JPG"
+        "image": "artist.jpg"
     },
     {
         "headerSwedish": "Färger",
@@ -194,7 +194,7 @@ const artProjects = Object.freeze([
     {
         "headerSwedish": "Dam",
         "headerEnglish": "Lady",
-        "image": "lady.JPG"
+        "image": "lady.jpg"
     },
     {
         "headerSwedish": "Modell",
@@ -204,7 +204,7 @@ const artProjects = Object.freeze([
     {
         "headerSwedish": "Staty",
         "headerEnglish": "Statue",
-        "image": "statue.png"
+        "image": "statue.jpg"
     },
 ]);
 
