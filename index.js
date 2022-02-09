@@ -78,9 +78,9 @@ const programmingProjects = Object.freeze([
             player can only try to avoid.",
         "madeByEnglish": "Me and a classmate (sprites are made by my classmate)",
         "madeBySwedish": "Mig och en klasskamrat (sprites är gjorda av min klasskamrat)",
-        "image": "hell_01.png",
+        "image": "hell_01.jpg",
         "techniques": "C++, SFML",
-        "images": ["hell_0.png"],
+        "images": ["hell_01.jpg"],
     },
     {
         "headerSwedish": "Inventory Manager",
@@ -104,7 +104,7 @@ const programmingProjects = Object.freeze([
         "madeBySwedish": "Mig och fem klasskamrater",
         "image": "syncore_01.png",
         "techniques": "Typescript, Node, React, MySql",
-        "images": ["syncore_01.png", "syncore_02.png"],
+        "images": ["syncore_01.png"],
     },
     {
         "headerSwedish": "Socialt nätverk",
