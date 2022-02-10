@@ -2,17 +2,20 @@
         <html lang="sv">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <title>M.K - Portfolio</title>
         <meta name="description" content="Portfolio">
         <meta name="author" content="Manuela Karlsson">
 
+        <link rel="preload" href="https://fontlibrary.org//face/roboto-mono" as="font"/>
+        <link rel="preload" href="./reset.css?v=1.0" as="style">
+        <link rel="preload" href="./index.css?v=1.0" as="style">
+
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/roboto-mono&display=swap" type="text/css"/>
         <link rel="stylesheet" href="./reset.css?v=1.0">
         <link rel="stylesheet" href="./index.css?v=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/roboto-mono" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono&display=swap" rel="stylesheet"> 
+        
         <link rel="icon" type="image/x-icon" href="./page_images/favicon.ico">
         <script defer src="./index.js"></script>
     </head>
@@ -32,7 +35,7 @@
             <div id="about-content">
                 <h2 id="about-title"></h2>
                     <div id="language-wrapper">
-                        <label for="language" id="language-label"><img id="globe" src="./page_images/globe.png"></label>
+                        <label for="language" id="language-label"><img id="globe" alt="languages" src="./page_images/globe.png"></label>
                         <select name="langauge" id="language">
                             <option value="Swedish">Svenska</option>
                             <option value="English">English</option>

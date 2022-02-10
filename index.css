@@ -35,6 +35,7 @@ html {
 
 h1, h2, h3, option, select, p, label{
     font-family: 'RobotoMonoRegular', 'monospace';
+    font-display: swap;
 }
 
 h1{

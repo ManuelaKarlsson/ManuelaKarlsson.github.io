@@ -261,7 +261,7 @@ function insertProgrammingProjects() {
         const tag = document.createElement("div");
         tag.classList.add("programming-card");
         const imagePath = programmingFolder + getSmallImageName(programmingProjects[i].image);
-        addHeaderAndImageToTag(tag, programmingProjects[i][`header${currentLanguage}`], imagePath);
+        addHeaderAndImageToTag(tag, programmingProjects[i][`header${currentLanguage}`], imagePath, "project");
 
         const description = document.createElement("p");
         description.classList.add("max-width");
@@ -298,7 +298,7 @@ function insertArtProjects() {
         tag.classList.add("art-card");
 
         const imagePath = artFolder + getSmallImageName(artProjects[i].image);
-        addHeaderAndImageToTag(tag, artProjects[i][`header${currentLanguage}`], imagePath);
+        addHeaderAndImageToTag(tag, artProjects[i][`header${currentLanguage}`], imagePath, "painting");
 
         button.appendChild(tag);
         button.onclick = function () {
@@ -312,7 +312,7 @@ function insertArtProjects() {
     bigArtCard.appendChild(artContent);
 }
 
-function addHeaderAndImageToTag(tag, text, imagePath) {
+function addHeaderAndImageToTag(tag, text, imagePath, alt) {
     const header = document.createElement("h3");
     const headerText = document.createTextNode(text);
     header.classList.add("max-width");
@@ -321,11 +321,12 @@ function addHeaderAndImageToTag(tag, text, imagePath) {
 
     const img = document.createElement("img");
     img.src = imagePath;
+    img.alt = alt;
     img.classList.add("max-width");
     tag.appendChild(img);
 }
 
-function addBigHeaderAndImageToContent(tag, text, imagePath, isBorderedImage = false) {
+function addBigHeaderAndImageToContent(tag, text, imagePath, alt, isBorderedImage = false) {
     return new Promise(resolve => {
         const windowWidth = window.innerWidth;
         const imageWidthNumber = windowWidth < 500 ? windowWidth - 64: Math.round(windowWidth * 0.75);
@@ -340,6 +341,7 @@ function addBigHeaderAndImageToContent(tag, text, imagePath, isBorderedImage = f
 
         const img = document.createElement("img");
         img.src = imagePath;
+        img.alt = alt;
         img.classList.add("modal-resize");
 
         img.onload = function () {
@@ -423,7 +425,7 @@ function setBigHeadersAndAbout(){
 async function createModalProgrammingContent(project){
     const content = document.createElement("div");
     content.id = "unique";
-    await addBigHeaderAndImageToContent(content, project[`header${currentLanguage}`], programmingFolder + project.image, true);
+    await addBigHeaderAndImageToContent(content, project[`header${currentLanguage}`], programmingFolder + project.image, "project", true);
 
     insertLabelAndText(content, techniques[currentLanguage], project.techniques);
     insertLabelAndText(content, madeBy[currentLanguage], project[`madeBy${currentLanguage}`]);
@@ -447,7 +449,7 @@ async function setModalProgramming(project, index) {
 async function createModalArtContent(project){
     const content = document.createElement("div");
     content.id = "unique";
-    await addBigHeaderAndImageToContent(content, project[`header${currentLanguage}`], artFolder + project.image);
+    await addBigHeaderAndImageToContent(content, project[`header${currentLanguage}`], artFolder + project.image, "painting");
     return content;
 }
 
