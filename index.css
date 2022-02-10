@@ -46,7 +46,7 @@ html {
     background-image: url('./page_images/chess.png'); 
 }
 
-h1, h2, h3, option, select, p, label{
+h1, h2, h3, option, select, p, label, a{
     font-family: 'RobotoMonoRegular', 'monospace';
     font-display: swap;
 }
@@ -93,6 +93,29 @@ select, option{
     cursor: pointer;
 }
 
+#linkedin-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-left: 0.7rem;
+}
+
+#linkedin{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: 0.2s;
+}
+
+#linkedin:hover{
+    border: 1px solid white;
+}
+
 #language-wrapper{
     position: absolute;
     top: 0;
@@ -118,8 +141,9 @@ select, option{
 
 #about-title{
     color: var(--about);
-    margin-top: 1em;
-    margin-bottom: 1em;
+    padding-top: 0.5rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 1.2rem;
 }
 
 #about-content{
