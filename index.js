@@ -4,7 +4,7 @@ const about = Object.freeze({
         "Jag går det sista året på Innovativ Programmering på Linköping Universitet. \
         Tidigare har jag gått tre år på en konstskola. Som person är jag ganska nördig och \
         nyfiken.",
-    "textEnglish": "I am a third student of Innovative Programmming at Linköping University. \
+    "textEnglish": "I am a third student of Innovative Programming at Linköping University. \
         Earlier I have studied three years at an art school. As a person I am quite nerdy and curious.",
 });
 
