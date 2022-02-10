@@ -288,7 +288,7 @@ function getSmallImageName(image){
 
 function insertArtProjects() {
     artContent = document.createElement("div");
-    artContent.id = "programming-content";
+    artContent.id = "art-content";
 
     for (let i = 0; i < artProjects.length; ++i) {
         const button = document.createElement("button");

@@ -151,10 +151,12 @@ select, option{
 .card-button{
     margin: 1rem;
     transition: 0.2s;
+    box-shadow: var(--shadow);
+    
 }
 
 .card-button:hover{  
-    box-shadow: var(--shadow), 2px 2px 20px rgba(30, 30, 30, 0.1);
+    box-shadow: var(--shadow), var(--shadow), 2px 2px 20px rgba(30, 30, 30, 0.1);
 }
 
 .programming-card:hover, .art-card:hover{
@@ -168,7 +170,6 @@ select, option{
 .programming-card, .art-card {
     background-color: var(--small-card);
     text-align: center;
-    box-shadow: var(--shadow);
     padding: 1em;
     position: relative;
     height: calc(100% - 2em);
